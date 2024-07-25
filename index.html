@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <link rel="stylesheet" href="tampil.css"
+</head>
+<body class="button">
+<div class="piano-wrapper">
+    <div class="text">
+        <h1>Piano</h1>
+        <h4>Fadiyah Irbati</h4>
+    </div>
+   <div class="piano">
+    <button class="white-key C3" onclick="playAudio('C3')">DO</button>
+    <button class="white-key D3" onclick="playAudio('D3')">RE</button>
+    <button class="white-key E3" onclick="playAudio('E3')">MI</button>
+    <button class="white-key F3" onclick="playAudio('F3')">FA</button>
+    <button class="white-key G3" onclick="playAudio('G3')">SOL</button>
+    <button class="white-key A3" onclick="playAudio('A3')">LA</button>
+    <button class="white-key B3" onclick="playAudio('B3')">SI</button>
+    <button class="white-key C4" onclick="playAudio('C4')">DO</button>
+    <button class="white-key D4" onclick="playAudio('D4')">RE</button>
+    <button class="white-key E4" onclick="playAudio('E4')">MI</button>
+    <button class="white-key F4" onclick="playAudio('F4')">FA</button>
+    <button class="white-key G4" onclick="playAudio('G4')">SOL</button>
+    <button class="white-key A4" onclick="playAudio('A4')">LA</button>
+    <button class="white-key B4" onclick="playAudio('B4')">SI</button>
+    <button class="white-key C5" onclick="playAudio('C5')">DO</button>
+    <button class="white-key D5" onclick="playAudio('D5')">RE</button>
+    <button class="white-key E5" onclick="playAudio('E5')">MI</button>
+    <button class="white-key F5" onclick="playAudio('F5')">FA</button>
+    <button class="white-key G5" onclick="playAudio('G5')">SOL</button>
+    <button class="white-key A5" onclick="playAudio('A5')">LA</button>
+    <button class="white-key B5" onclick="playAudio('B5')">SI</button>
+    <button class="white-key C6" onclick="playAudio('C6')">DO</button>
+</div> 
+</div>
+    <script>
+        let audioDo1 = new Audio("C3.mp3");
+        let audioRe1 = new Audio("D3.mp3");
+        let audioMi1 = new Audio("E3.mp3");
+        let audioFa1 = new Audio("F3.mp3");
+        let audioSol1 = new Audio("G3.mp3");
+        let audioLa1 = new Audio("A3.mp3");
+        let audioSi1 = new Audio("B3.mp3");
+
+        let audioDo2 = new Audio("C4.mp3");
+        let audioRe2 = new Audio("D4.mp3");
+        let audioMi2 = new Audio("E4.mp3");
+        let audioFa2 = new Audio("F4.mp3");
+        let audioSol2 = new Audio("G4.mp3");
+        let audioLa2 = new Audio("A4.mp3");
+        let audioSi2 = new Audio("B4.mp3");
+        
+        let audioDo3 = new Audio("C5.mp3");
+        let audioRe3 = new Audio("D5.mp3");
+        let audioMi3 = new Audio("E5.mp3");
+        let audioFa3 = new Audio("F5.mp3");
+        let audioSol3 = new Audio("G5.mp3");
+        let audioLa3 = new Audio("A5.mp3");
+        let audioSi3 = new Audio("B5.mp3");
+
+        let audioDo4 = new Audio("C6.mp3");
+
+        function playAudio(note){
+            if(note === "C3"){
+                audioDo1.pause();
+                audioDo1.currentTime = 0;
+                audioDo1.play();
+            }
+            if(note === "D3"){
+                audioRe1.pause();
+                audioRe1.currentTime = 0;
+                audioRe1.play();
+            }
+            if(note === "E3"){
+                audioMi1.pause();
+                audioMi1.currentTime = 0;
+                audioMi1.play();
+            }
+            if(note === "F3"){
+                audioFa1.pause();
+                audioFa1.currentTime = 0;
+                audioFa1.play();
+            }
+            if(note === "G3"){
+                audioSol1.pause();
+                audioSol1.currentTime = 0;
+                audioSol1.play();
+            }
+            if(note === "A3"){
+                audioLa1.pause();
+                audioLa1.currentTime = 0;
+                audioLa1.play();
+            }
+            if(note === "B3"){
+                audioSi1.pause();
+                audioSi1.currentTime = 0;
+                audioSi1.play();
+            }
+
+            if(note === "C4"){
+                audioDo2.pause();
+                audioDo2.currentTime = 0;
+                audioDo2.play();
+            }
+            if(note === "D4"){
+                audioRe2.pause();
+                audioRe2.currentTime = 0;
+                audioRe2.play();
+            }
+            if(note === "E4"){
+                audioMi2.pause();
+                audioMi2.currentTime = 0;
+                audioMi2.play();
+            }
+            if(note === "F4"){
+                audioFa2.pause();
+                audioFa2.currentTime = 0;
+                audioFa2.play();
+            }
+            if(note === "G4"){
+                audioSol2.pause();
+                audioSol2.currentTime = 0;
+                audioSol2.play();
+            }
+            if(note === "A4"){
+                audioLa2.pause();
+                audioLa2.currentTime = 0;
+                audioLa2.play();
+            }
+            if(note === "B4"){
+                audioSi2.pause();
+                audioSi2.currentTime = 0;
+                audioSi2.play();
+            }
+
+            if(note === "C5"){
+                audioDo3.pause();
+                audioDo3.currentTime = 0;
+                audioDo3.play();
+            }
+            if(note === "D5"){
+                audioRe3.pause();
+                audioRe3.currentTime = 0;
+                audioRe3.play();
+            }
+            if(note === "E5"){
+                audioMi3.pause();
+                audioMi3.currentTime = 0;
+                audioMi3.play();
+            }
+            if(note === "F5"){
+                audioFa3.pause();
+                audioFa3.currentTime = 0;
+                audioFa3.play();
+            }
+            if(note === "G5"){
+                audioSol3.pause();
+                audioSol3.currentTime = 0;
+                audioSol3.play();
+            }
+            if(note === "A5"){
+                audioLa3.pause();
+                audioLa3.currentTime = 0;
+                audioLa3.play();
+            }
+            if(note === "B5"){
+                audioSi3.pause();
+                audioSi3.currentTime = 0;
+                audioSi3.play();
+            }
+            if(note === "C6"){
+                audioDo4.pause();
+                audioDo4.currentTime = 0;
+                audioDo4.play();
+            }
+        }
+
+        document.onkeydown = checkKey;
+      function checkKey(e) {
+        e = e || window.event;
+
+        if (e.keyCode == "90") {
+            audioDo1.pause();
+            audioDo1.currentTime = 0;
+            audioDo1.play();
+        }
+
+        if (e.keyCode == "88") {
+            audioRe1.pause();
+            audioRe1.currentTime = 0;
+            audioRe1.play();
+        }
+
+        if (e.keyCode == "67") {
+            audioMi1.pause();
+            audioMi1.currentTime = 0;
+            audioMi1.play();
+        }
+
+        if (e.keyCode == "86") {
+            audioFa1.pause();
+            audioFa1.currentTime = 0;
+            audioFa1.play();
+        }
+
+        if (e.keyCode == "66") {
+            audioSol1.pause();
+            audioSol1.currentTime = 0;
+            audioSol1.play();
+        }
+
+        if (e.keyCode == "78") {
+            audioLa1.pause();
+            audioLa1.currentTime = 0;
+            audioLa1.play();
+        }
+
+        if (e.keyCode == "77") {
+            audioSi1.pause();
+            audioSi1.currentTime = 0;
+            audioSi1.play();
+        }
+
+        if (e.keyCode == "65") {
+            audioDo2.pause();
+            audioDo2.currentTime = 0;
+            audioDo2.play();
+        }
+
+        if (e.keyCode == "83") {
+            audioRe2.pause();
+            audioRe2.currentTime = 0;
+            audioRe2.play();
+        }
+
+        if (e.keyCode == "68") {
+            audioMi2.pause();
+            audioMi2.currentTime = 0;
+            audioMi2.play();
+        }
+
+        if (e.keyCode == "70") {
+            audioFa2.pause();
+            audioFa2.currentTime = 0;
+            audioFa2.play();
+        }
+
+        if (e.keyCode == "71") {
+            audioSol2.pause();
+            audioSol2.currentTime = 0;
+            audioSol2.play();
+        }
+
+        if (e.keyCode == "72") {
+            audioLa2.pause();
+            audioLa2.currentTime = 0;
+            audioLa2.play();
+        }
+
+        if (e.keyCode == "74") {
+            audioSi2.pause();
+            audioSi2.currentTime = 0;
+            audioSi2.play();
+        }
+
+        if (e.keyCode == "81") {
+            audioDo3.pause();
+            audioDo3.currentTime = 0;
+            audioDo3.play();
+        }
+
+        if (e.keyCode == "87") {
+            audioRe3.pause();
+            audioRe3.currentTime = 0;
+            audioRe3.play();
+        }
+
+        if (e.keyCode == "69") {
+            audioMi3.pause();
+            audioMi3.currentTime = 0;
+            audioMi3.play();
+        }
+
+        if (e.keyCode == "82") {
+            audioFa3.pause();
+            audioFa3.currentTime = 0;
+            audioFa3.play();
+        }
+
+        if (e.keyCode == "84") {
+            audioSol3.pause();
+            audioSol3.currentTime = 0;
+            audioSol3.play();
+        }
+
+        if (e.keyCode == "89") {
+            audioLa3.pause();
+            audioLa3.currentTime = 0;
+            audioLa3.play();
+        }
+
+        if (e.keyCode == "85") {
+            audioSi3.pause();
+            audioSi3.currentTime = 0;
+            audioSi3.play();
+        }
+
+        if (e.keyCode == "73") {
+            audioDo4.pause();
+            audioDo4.currentTime = 0;
+            audioDo4.play();
+        }
+      }
+    
+    </script>
+</body>
+</html>
